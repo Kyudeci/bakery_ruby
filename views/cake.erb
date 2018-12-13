@@ -3,10 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <%= erb :"partials/header" %>
-    
+    <div class="full-contain">
+    <div class="img-contain">
+      <h2><%= @cake1.type %></h2>
+      <img class="img-adjust" style="height:400px" src='<%= @cake1.image %>' alt="">
+    </div>
+    <p class="ptext">$<%= @cake1.price %>0</p>
+    <p class="ptext">It's spring all year 'round even when it isn't. </p>
+    </div>
+    <div class="full-contain">
+    <div class="img-contain">
+      <h2><%= @cake2.type %></h2>
+      <img class="img-adjust" style="height:400px" src='<%= @cake2.image %>' alt="">
+    </div>
+    <p class="ptext">$<%= @cake2.price %>0</p>
+    <p class="ptext">Build your own cake, decorations not included. </p>
+    </div>
+    <div class="full-contain">
+    <div class="img-contain">
+      <h2><%= @cake3.type %></h2>
+      <img class="img-adjust" style="height:400px" src='<%= @cake3.image %>' alt="">
+    </div>
+    <p class="ptext">$<%= @cake3.price %>0</p>
+    <p class="ptext">I dislike coconut heavily(Full Stop)</p>
+    </div>
     <%= erb :"partials/footer" %>
   </body>
 </html>

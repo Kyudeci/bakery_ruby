@@ -29,8 +29,8 @@ end
 
 get "/cake" do
   @cake1 = Cake.new('flower_cake.jpeg','Flower Cake', true, 1)
-  @cake2 = Cake.new('red_cupcake.jpg','Red Velvet Cupcake', false, 1)
-  @cake3 = Cake.new('choco_cupcakes.jpg','Chocolatte Cupcake', false, 1)
+  @cake2 = Cake.new('basic_cake.jpeg','Build-a-Cake', false, 1)
+  @cake3 = Cake.new('coconut.jpg','Coconut Cake', false, 1)
   erb :cake
 end
 # https://github.com/fizal619/yearup-class-2018/tree/master/w08/d01/classwork/views/partials

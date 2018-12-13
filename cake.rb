@@ -1,6 +1,7 @@
 class Cake
   attr_accessor :image, :type, :decoration, :amount
   def initialize (image, type, decoration, amount)
+    @image = image
     @type = type;
     @decoration = decoration;
     @amount = amount;

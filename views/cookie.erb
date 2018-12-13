@@ -12,11 +12,18 @@
     <center>
       <h3>Welcome to Cookie Heaven!</h3>
     </center>
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
-        <div class="col">
-          <h4> Flavor Options</h4>
-          <!-- <input id="suggest" type="text" name=""  placeholder="Suggest a Type!">
+        <div class="col"> -->
+        <div class="full-contain">
+        <div class="img-contain">
+          <h2><%= @cookie1.type %></h2>
+          <img class="img-adjust" id="choco-chip" style="height:400px" src='<%= @cookie1.image %>' alt="">
+        </div>
+        <p class="ptext">3 cookies for $<%= @cookie1.price %>0</p>
+        </div>
+          <!-- <h4> Flavor Options</h4>
+          <input id="suggest" type="text" name=""  placeholder="Suggest a Type!">
           <button id="submit2">Submit</button>
             <p class="options" style="font-weight:bold">Suggestions:</p>
             <p class="options">Chocolate Chip</p>
@@ -30,17 +37,31 @@
               <h4></h4>
             </form> -->
             <!--Take input and add to list of items in second div but also create a way to remove item -->
+        <!-- </div>
+        <div id="display" class="col"> -->
+        <div class="full-contain">
+        <div class="img-contain">
+          <h2><%= @cookie2.type %></h2>
+          <img class="img-adjust" src='<%= @cookie2.image %>' alt="">
         </div>
-        <div id="display" class="col">
-          <h4>Order</h4>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRmm88C2m4RVd56gcRFZc3vGCLhBA9QBGh6vpR4pE7m1wyOg/viewform?embedded=true" width="640" height="917" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <p class="ptext">3 cookies for $<%= @cookie2.price %>0</p>
+        </div>
+        <div class="full-contain">
+        <div class="img-contain">
+          <h2><%= @cookie3.type %></h2>
+          <img class="img-adjust" style="height:400px" src='<%= @cookie3.image %>' alt="">
+        </div>
+        <p class="ptext">3 cookies for $<%= @cookie3.price %>0</p>
+        </div>
+          <!-- <h4>Order</h4>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRmm88C2m4RVd56gcRFZc3vGCLhBA9QBGh6vpR4pE7m1wyOg/viewform?embedded=true" width="640" height="917" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
           <!-- Input selections from adjacent cell here and apply class typewriter  -->
-        </div>
+        <!-- </div>
         <div class="w-100"></div>
         <div class="col"></div>
         <div class="col"></div>
       </div>
-    </div>
+    </div> -->
     <script type="text/javascript" src="cookie.js"></script>
   </body>
 </html>

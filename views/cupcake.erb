@@ -7,5 +7,30 @@
   </head>
   <body>
     <%= erb :"partials/header" %>
+    <center>
+      <h3>Cupcakes starting at $1.50</h3>
+    <center>
+    <div class="full-contain">
+    <div class="img-contain">
+      <h2><%= @cupcake1.type %></h2>
+      <img class="img-adjust" style="height:400px" src='<%= @cupcake1.image %>' alt="">
+    </div>
+    <p class="ptext">3 cookies for $<%= @cupcake1.price %>0</p>
+    <p> Come get y'all (cup)cakes! These are our hottest sellers (for cupcakes)! </p>
+    </div>
+    <div class="full-contain">
+    <div class="img-contain">
+      <h2><%= @cupcake2.type %></h2>
+      <img class="img-adjust" style="height:400px" src='<%= @cupcake2.image %>' alt="">
+    </div>
+    <p class="ptext">3 cupcakes for $<%= @cupcake2.price %>0</p>
+    </div>
+    <div class="full-contain">
+    <div class="img-contain">
+      <h2><%= @cupcake3.type %></h2>
+      <img class="img-adjust" style="height:400px" src='<%= @cupcake3.image %>' alt="">
+    </div>
+    <p class="ptext">3 cupcakes for $<%= @cupcake3.price %>0</p>
+    </div>
   </body>
 </html>

@@ -1,17 +1,17 @@
-class Cookies
-  attr_accessor :image, :type, :icing, :amount
-  def initialize (image, type, icing, amount)
+class Cupcake
+  attr_accessor :image, :type, :frosting, :amount
+  def initialize (image, type, frosting, amount)
     @image = image
     @type = type
-    @icing = icing;
+    @frosting = frosting
     @amount = amount
   end
   def price
-    @price = 1.00
+    @price = 1.50
     @add = 0
     @total = @amount * @price
-    if (@icing == true)
-      @add += 0.50
+    if (@frosting == true)
+      @add += 0
       else
       @add += 0
     end

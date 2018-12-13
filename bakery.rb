@@ -17,13 +17,20 @@ get "/cookie" do
 end
 
 get "/cupcake" do
-  @cupcake1 = Cupcake.new('van_cupcake.jpg','Vanilla Cupcake', true, 6)
-  @cupcake2 = Cupcake.new('red_cupcake.jpg','Red Velvet Cupcake', false, 5)
-  @cupcake3 = Cupcake.new('choco_cupcakes.jpg','Chocolatte Cupcake', false, 6)
+  @cupcake1 = Cupcake.new('van_cupcake.jpg','Vanilla Cupcake', true, 5)
+  @cupcake2 = Cupcake.new('red_cupcake.jpg','Red Velvet Cupcake', false, 6)
+  @cupcake3 = Cupcake.new('choco_cupcakes.jpg','Chocolatte Cupcake', false, 5)
   erb :cupcake
 end
 
 get "/muffins" do
   erb :muffin
+end
+
+get "/cake" do
+  @cake1 = Cake.new('flower_cake.jpeg','Flower Cake', true, 1)
+  @cake2 = Cake.new('red_cupcake.jpg','Red Velvet Cupcake', false, 1)
+  @cake3 = Cake.new('choco_cupcakes.jpg','Chocolatte Cupcake', false, 1)
+  erb :cake
 end
 # https://github.com/fizal619/yearup-class-2018/tree/master/w08/d01/classwork/views/partials

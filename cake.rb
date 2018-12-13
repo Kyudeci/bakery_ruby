@@ -6,7 +6,7 @@ class Cake
     @amount = amount;
   end
   def price
-    @price = 5.00
+    @price = 20.00
     @add = 0
     @total = @amount * @price
     if (@decoration == true)

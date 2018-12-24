@@ -12,59 +12,38 @@
     <center>
       <h3>Welcome to Cookie Heaven!</h3>
     </center>
-    <!-- <div class="container">
+     <div class="container">
       <div class="row">
-        <div class="col"> -->
-        <div class="full-contain">
-        <div class="img-contain">
-          <h2><%= @cookie1.type %></h2>
-          <img class="img-adjust" id="choco-chip" style="height:400px" src='<%= @cookie1.image %>' alt="">
-        </div>
-        <p class="ptext">3 cookies for $<%= @cookie1.price %>0</p>
-        <p class="ptext">Chocolate chips nuff said (ironically drops mic)</p>
-        </div>
-          <!-- <h4> Flavor Options</h4>
-          <input id="suggest" type="text" name=""  placeholder="Suggest a Type!">
-          <button id="submit2">Submit</button>
-            <p class="options" style="font-weight:bold">Suggestions:</p>
-            <p class="options">Chocolate Chip</p>
-            <p class="options">Peanut Butter</p>
-            <p class="options">Sugar</p> -->
-            <!-- <p>If you would like to order cookies do so on this form!<br> I will make sure to send an invoice by end of day.</p>
-            <form class="" action="index.html" method="post">
-              <h4>Icing</h4>
-              <input type="radio" name="icing" value="true">Yes<br>
-              <input type="radio" name="icing" value="false">No<br>
-              <h4></h4>
-            </form> -->
+        <div class="col">
+          <h4> Flavor Options</h4>
+              <p class="options" style="font-weight:bold">Suggestions:</p>
+              <p class="options">Chocolate Chip</p>
+              <p class="options">Peanut Butter</p>
+              <p class="options">Sugar</p>
+              <p>If you would like to order cookies do so on this form!<br> I will make sure to send an invoice by end of day.</p>
+                <form action="/cookie" method="post">
+                  <h3>Cookie Order</h3>
+                  <h4>Cookie</h4>
+                  <input required type="text" name="cookie" placeholder="Cookie!">
+                  <h4>Icing</h4>
+                  <input required type="radio" name="icing" value="true">Yes<br>
+                  <input type="radio" name="icing" value="false">No<br>
+                  <h4>How Many?</h4>
+                  <input required type="number" name="cookie_amt" min="3"><br>
+                  <input type="submit">
+                </form>
             <!--Take input and add to list of items in second div but also create a way to remove item -->
-        <!-- </div>
-        <div id="display" class="col"> -->
-        <div class="full-contain">
-        <div class="img-contain">
-          <h2><%= @cookie2.type %></h2>
-          <img class="img-adjust" src='<%= @cookie2.image %>' alt="">
         </div>
-        <p class="ptext">3 cookies for $<%= @cookie2.price %>0</p>
-        <p class="ptext">The chocolate corrupted the previous cookie and now it is completey fudge!</p>
+        <div id="display" class="col">
+          <h4>Order</h4>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRmm88C2m4RVd56gcRFZc3vGCLhBA9QBGh6vpR4pE7m1wyOg/viewform?embedded=true" width="640" height="917" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          <!--Input selections from adjacent cell here and apply class typewriter  -->
         </div>
-        <div class="full-contain">
-        <div class="img-contain">
-          <h2><%= @cookie3.type %></h2>
-          <img class="img-adjust" style="height:400px" src='<%= @cookie3.image %>' alt="">
-        </div>
-        <p class="ptext">3 cookies for $<%= @cookie3.price %>0</p>
-        <p class="ptext">"Cookie Cat! He left his family behind :("</p>
-        </div>
-          <!-- <h4>Order</h4>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRmm88C2m4RVd56gcRFZc3vGCLhBA9QBGh6vpR4pE7m1wyOg/viewform?embedded=true" width="640" height="917" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
-          <!-- Input selections from adjacent cell here and apply class typewriter  -->
-        <!-- </div>
         <div class="w-100"></div>
         <div class="col"></div>
         <div class="col"></div>
       </div>
-    </div> -->
+     </div>
     <%= erb :"partials/footer" %>
     <script type="text/javascript" src="cookie.js"></script>
   </body>

@@ -16,14 +16,15 @@ ActiveRecord::Base.establish_connection(
 get "/" do
   erb :index
 end
-
 get "/cookie" do
   @cookie1 = Cookies.new('cookie_plate.jpg','Chocolate Chip', false, 3)
   @cookie2 = Cookies.new('fudge_cookie.jpg','Fudge', false, 3)
   @cookie3 = Cookies.new('cookie_cat.jpeg','Cookie Cat', false, 5)
   erb :cookie
 end
-
+post "/cookie" do
+  redirect "/cookie"
+end
 get "/cupcake" do
   @cupcake1 = Cupcake.new('van_cupcake.jpg','Vanilla Cupcake', true, 5)
   @cupcake2 = Cupcake.new('red_cupcake.jpg','Red Velvet Cupcake', false, 6)

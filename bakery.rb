@@ -5,6 +5,14 @@ require './cake'
 require './cupcake'
 require './muffin'
 
+require 'sqlite3'
+require 'active_record'
+
+enable :sessions
+ActiveRecord::Base.establish_connection(
+  adapter: 'sqlite3',
+  database: 'db/goods.db'
+)
 get "/" do
   erb :index
 end
